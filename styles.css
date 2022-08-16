@@ -1,0 +1,139 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background: #fff;
+  color: #4d4e53;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  font-size: 14px;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+#navbar {
+  width: 35%;
+  height: 100vh;
+  position: fixed;
+  top: 10px;
+  left: 5px;
+}
+
+#main_header > a,
+header {
+  font-size: 16px;
+  text-align: center;
+  margin: 0.4em 0;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+#main_header {
+  background-color: rgb(72, 170, 137);
+  border-radius: 5px;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.5em;
+}
+.main-section > header {
+  margin-bottom: 1.5em;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid green;
+  border-top: 1px solid green;
+  margin: 0;
+  padding: 0;
+}
+ul.links > li {
+  list-style: none;
+  border-bottom: 1px solid green;
+  border-left: 1px solid green;
+}
+nav > ul > li:hover {
+  background-color: rgb(72, 170, 137);
+  color: #fff;
+}
+ul > li > a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: capitalize;
+  cursor: pointer;
+  padding-bottom: 0.5em;
+  display: block;
+  padding-left: 1em;
+  padding-top: 0.5em;
+}
+
+main#main-doc {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2em;
+  margin-top: 2em;
+}
+
+section {
+  height: 100vh;
+  width: 90%;
+  margin-left: 3em;
+  overflow: hidden;
+}
+
+section p:first-of-type {
+  text-indent: 25px;
+}
+
+p {
+  letter-spacing: 1px;
+  margin-top: 0.5em;
+  line-height: 20px;
+}
+code > p {
+  background-color: #999;
+  color: #fff;
+  font-size: 12px;
+  text-indent: 0px;
+}
+
+section > ul > li {
+  margin-bottom: 0.3em;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+#mdn {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  color: rgb(72, 170, 137);
+}
+
+@media (min-width: 992px) {
+  #navbar {
+    width: 20%;
+    left: 20px;
+    top: 2px;
+  }
+  main#main-doc {
+    width: 75%;
+    padding: 0 4em;
+  }
+  .main-section > header {
+    font-size: 30px;
+  }
+  ul.links > li {
+    border-left: 1px solid green;
+  }
+}
